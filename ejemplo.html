@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fichacaract</title>
+
+    <!-- BOOTSWATCH -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" />
+</head>
+
+<body class="bg-dark">
+    <!-- ADD TASK -->
+    <div class="container p-20">
+        <div class="row">
+            <div class="col-md-20">
+                <div class="card">
+                    <div class="card-body">
+
+                        <form id="task-form">
+
+                            <head>
+                                <h1 id="titulo"><img src="Imagen1.jpg.gif" width="100" />Ficha De Caracterizacion</h1>
+                                <h2>FUNDACIÓN CAMINO DE LA ESPERANZA </h2>
+                            </head>
+                            <hr>
+                            <hr>
+                            <label for="nombre y apellido">Nombre y Apellido del Beneficiario </label>
+                            <input type="text" id="nombre y apellido" name="nombre y apellido"
+                                placeholder="">
+                            <br>
+                            <label for="Lugar">Lugar </label>
+                            <input type="text" id="Lugar" name="Lugar" placeholder="">
+                            <label for="fecha nacimiento">fecha de nacimiento </label>
+                            <input type="date" id="fecha nacimiento" name="fecha de nacimiento">
+                            <br>
+                            <fieldset>
+                                <legend>Documento de Identidad</legend>
+                                <label>
+                                    <input type="radio" name="tipodocu" value="R.C"> R.C
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipodocu" value="T.I"> T.I
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipodocu" value="C.C"> C.C
+                                </label>
+                                <br>
+                                <label for="Numero de documento">Nº </label>
+                                <input type="number" id="Numero de documento" name="Numero de documento" placeholder="">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Genero</legend>
+                                <label>
+                                    <input type="radio" name="tipogene" value="M"> M
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipogene" value="F"> F
+                                </label>
+                                <br>
+                            </fieldset>
+                            <br>
+                            <label for="grupo_sanguineo"> R.H:</label>
+                            <select id="grupo_sanguineo">
+                                <option value="">--Porfavor escoja una opcion--</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                            <label for="curso"> Grado a cursar:</label>
+
+                            <select id="curso">
+                                <option value="">--Porfavor escoja una opcion--</option>
+                                <option value="prejardin A">prejardin A</option>
+                                <option value="prejardin B">prejardin B</option>
+                                <option value="prejardin C">prejardin C</option>
+                                <option value="jardin A">jardin A</option>
+                                <option value="jardin B">jardin B</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="Direccion">Direccion de Vivienda</label>
+                            <input type="text" id="Direccion" name="Direccion" placeholder="">
+                            <label for="Numero de Telefono">Telefono </label>
+                            <input type="number" id="Numero de Telefono" name="Numero de Telefono" placeholder="">
+                            <br>
+                            <br>
+                            <label for="Numero de Celular">Celular </label>
+                            <input type="number" id="Numero de Celular" name="Numero de Celular" placeholder="">
+                            <label for="Puntaje Sisben">Puntaje Sisben</label>
+                            <input type="number" id="Puntaje Sisben" name="Puntaje Sisben" placeholder="">
+                            <label for="Seguridad Social">Seguridad Social</label>
+                            <input type="text" id="Seguridad Social" name="Seguridad Social" placeholder="">
+                            <label for="Red Unidos">Red Unidos</label>
+                            <input type="text" id="Red Unidos" name="Red Unidos" placeholder="">
+                            <fieldset>
+                                <legend>Informacion Familiar</legend>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿Pertenece a algun grupo etnico indigena o afrocolombiano?</legend>
+                                <label>
+                                    <input type="radio" name="etnico" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="etnico" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿El beneficiario ha sido víctima directa del conflicto armado?</legend>
+                                <label>
+                                    <input type="radio" name="víctima" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="víctima" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿El beneficiario es hijo(a) de padre desmovilizado?</legend>
+                                <label>
+                                    <input type="radio" name="desmovilizado" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="desmovilizado" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿El beneficiario se encuentra amenazado de Reclutamiento ?</legend>
+                                <label>
+                                    <input type="radio" name="Reclutamiento" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="Reclutamiento" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <h2>Caracteristicas de la vivienda </h2>
+                            <hr>
+                            <hr>
+                            <label for="Departamendo">Departamendo de residencia</label>
+                            <input type="text" id="Departamendo" name="Departamendo" placeholder="">
+                            <label for="Municipio">Municipio/Distrito de residencia</label>
+                            <input type="text" id="Municipio" name="Municipio" placeholder="">
+                            <br>
+                            <fieldset>
+                                <legend>Zona de Ubicacion</legend>
+                                <label>
+                                    <input type="radio" name="ubicacion" value="Urbano"> Urbano
+                                </label>
+                                <label>
+                                    <input type="radio" name="ubicacion" value="Rural"> Rural
+                                </label>
+                                <br>
+                            </fieldset>
+                            <br>
+                            <label for="DirecciónV">Dirección de la vivienda</label>
+                            <input type="text" id="DirecciónV" name="DirecciónV" placeholder="">
+                            <label for="Barrio">Barrio</label>
+                            <input type="text" id="BarrioV" name="BarrioV" placeholder="">
+                            <fieldset>
+                                <legend>Tipo de vivienda</legend>
+                                <label>
+                                    <input type="radio" name="tvivienda" value="Casa"> Casa
+                                </label>
+                                <label>
+                                    <input type="radio" name="tvivienda" value="Apartamento"> Apartamento
+                                </label>
+                                <label>
+                                    <input type="radio" name="tvivienda" value="Finca"> Finca
+                                </label>
+                                <label>
+                                    <input type="radio" name="tvivienda" value="Habitacion"> Habitacion
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Tipo de tenencia de la vivienda</legend>
+                                <label>
+                                    <input type="radio" name="tendencia" value="Casa"> Propia
+                                </label>
+                                <label>
+                                    <input type="radio" name="tendencia" value="Apartamento"> Familiar
+                                </label>
+                                <label>
+                                    <input type="radio" name="tendencia" value="Finca"> En arriendo
+                                </label>
+                                <label>
+                                    <input type="radio" name="tendencia" value="Habitacion"> Invasion
+                                </label>
+                                <br>
+                            </fieldset>
+                            <label for="TiempoF">Tiempo de permanencia del núcleo familiar en la vivienda </label>
+                            <input type="text" id="TiempoF" name="TiempoF" placeholder="">
+                            <br>
+                            <label for="Numero de familiar">Número de personas que conforman el núcleo familiar y
+                                conviven en la
+                                misma
+                                vivienda. </label>
+                            <input type="number" id="Numero de familiar" name="Numero de familiar" placeholder="">
+                            <br>
+                            <br>
+                            <fieldset>
+                                <legend>La vivienda cuenta con espacios independientes para dormitorio, cocina y baños
+                                </legend>
+                                <label>
+                                    <input type="radio" name="independientes" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="independientes" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>El núcleo familiar del beneficiario tiene acceso a los siguientes servicios
+                                    domiciliarios :
+                                </legend>
+                                <label>Acueducto:
+                                    <input type="radio" name="Acueducto" value="si"> si
+                                    <input type="radio" name="Acueducto" value="no"> no
+                                </label>
+                                <br>
+                                <label>Energia:
+                                    <input type="radio" name="Energia" value="si"> si
+                                    <input type="radio" name="Energia" value="no"> no
+                                </label>
+                                <br>
+                                <label>Gas natural:
+                                    <input type="radio" name="Gas natural" value="si"> si
+                                    <input type="radio" name="Gas natural" value="no"> no
+                                </label>
+                                <br>
+                                <label>Telefono:
+                                    <input type="radio" name="Telecasa" value="si"> si
+                                    <input type="radio" name="Telecasa" value="no"> no
+                                </label>
+                                <br>
+                                <label>Alcantarillado:
+                                    <input type="radio" name="Alcantarillado" value="si"> si
+                                    <input type="radio" name="Alcantarillado" value="no"> no
+                                </label>
+                                <br>
+                                <label>Internet:
+                                    <input type="radio" name="Internet" value="si"> si
+                                    <input type="radio" name="Internet" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>El agua que consumen y utilizan para la preparacion de alimentos la obtienen de:
+                                </legend>
+                                <label>
+                                    <input type="radio" name="Acueducto1" value="Acueducto1"> Acueducto
+                                </label>
+                                <label>
+                                    <input type="radio" name="Acueducto1" value="Pozo"> Pozo
+                                </label>
+                                <label>
+                                    <input type="radio" name="Acueducto1" value="Pila publica"> Pila publica
+                                </label>
+                                <label>
+                                    <input type="radio" name="Acueducto1" value="Agua en bolsa o botella"> Agua en bolsa
+                                    o
+                                    botella
+                                </label>
+                                <label>
+                                    <input type="radio" name="Acueducto1" value="Aguatero"> Aguatero
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>En el hogar el agua la usan:
+                                </legend>
+                                <label>
+                                    <input type="radio" name="Acueducto2" value="Tal como la obtienen">Tal como la
+                                    obtienen
+                                </label>
+                                <label>
+                                    <input type="radio" name="Acueducto2" value="La hierven"> La hierven
+                                </label>
+                                <label>
+                                    <input type="radio" name="Acueducto2" value="La purifican con cloro"> La purifican
+                                    con cloro
+                                </label>
+                                <label>
+                                    <input type="radio" name="Acueducto2" value="Utilizan filtro"> Utilizan filtro
+                                </label>
+                                <label>
+                                    <input type="radio" name="Acueducto2" value="Aguatero"> Aguatero
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Cómo eliminan principalmente las basuras
+                                </legend>
+                                <label>
+                                    <input type="radio" name="basuras"
+                                        value="La recoge personal del servicio de aseo">La recoge
+                                    personal del servicio de aseo
+                                </label>
+                                <label>
+                                    <input type="radio" name="basuras" value="La recoge personal del servicio de aseo">
+                                    La
+                                    entierran
+                                </label>
+                                <label>
+                                    <input type="radio" name="basuras" value="La recoge personal del servicio de aseo">
+                                    La
+                                    queman
+                                </label>
+                                <label>
+                                    <input type="radio" name="basuras"
+                                        value="La recoge personal del servicio de aseo">La tiran
+                                    al patio
+                                    o a un lote
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Con qué tipo de sanitario cuenta el hogar
+                                </legend>
+                                <label>
+                                    <input type="radio" name="sanitario"
+                                        value="Inodoro conectado a alcantarillado">Inodoro
+                                    conectado a
+                                    alcantarillado
+                                </label>
+                                <label>
+                                    <input type="radio" name="sanitario"
+                                        value="Inodoro conectado a pozo séptico">Inodoro
+                                    conectado a
+                                    pozo séptico
+                                </label>
+                                <label>
+                                    <input type="radio" name="sanitario" value="Letrina"> Letrina
+                                </label>
+                                <label>
+                                    <input type="radio" name="sanitario" value="No tiene servicio sanitario">No tiene
+                                    servicio
+                                    sanitario
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Cerca de la vivienda se cuenta con:
+                                </legend>
+                                <label>Vias de acceso:
+                                    <input type="radio" name="Vias de acceso" value="si"> si
+                                    <input type="radio" name="Vias de acceso" value="no"> no
+                                </label>
+                                <br>
+                                <label>Transporte publico:
+                                    <input type="radio" name="Transporte publico" value="si"> si
+                                    <input type="radio" name="Transporte publico" value="no"> no
+                                </label>
+                                <br>
+                                <label>Sedes educativas:
+                                    <input type="radio" name="Sedes educativas" value="si"> si
+                                    <input type="radio" name="Sedes educativas" value="no"> no
+                                </label>
+                                <br>
+                                <label>Ludotecas:
+                                    <input type="radio" name="Ludotecas" value="si"> si
+                                    <input type="radio" name="Ludotecas" value="no"> no
+                                </label>
+                                <br>
+                                <label>Centros de Salud/Hospital:
+                                    <input type="radio" name="Centros de salud" value="si"> si
+                                    <input type="radio" name="Centros de salud" value="no"> no
+                                </label>
+                                <br>
+                                <label>Parques con estructura para la recreación:
+                                    <input type="radio" name="Parques" value="si"> si
+                                    <input type="radio" name="Parques" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <h3>DATOS DE LA CABEZA DEL NUCLEO FAMILIAR </h3>
+                            <label for="nombre y apellidoC">Nombre y Apellido</label>
+                            <input type="text" id="nombre y apellidoCabe" name="nombre y apellidoC" placeholder="">
+                            <br>
+                            <fieldset>
+                                <legend>Documento de Identidad</legend>
+                                <label>
+                                    <input type="radio" name="tipodocuCabe" value="R.C"> R.C
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipodocCabe" value="T.I"> T.I
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipodocuCabe" value="C.C"> C.C
+                                </label>
+                                <br>
+                                <label for="Numero de documento2">Nº </label>
+                                <input type="number" id="Numero de documentoCabe" name="Numero de documentoCabe"
+                                    placeholder="">
+                            </fieldset>
+                            <br>
+                            <label for="Lugar2">Lugar </label>
+                            <input type="text" id="LugarCabe" name="LugarCabe" placeholder="">
+                            <label for="fecha nacimiento2">fecha de nacimiento </label>
+                            <input type="date" id="fecha nacimientoCabe">
+                            <br>
+                            <br>
+                            <label for="DirecciónV2">Dirección de la vivienda</label>
+                            <input type="text" id="DirecciónCabe" name="DirecciónCabe" placeholder="">
+                            <label for="Barrio2">Barrio</label>
+                            <input type="text" id="BarrioCabe" name="BarrioCabe" placeholder="">
+                            <br>
+                            <br>
+                            <label for="Correo">Correo electronico</label>
+                            <input type="email" id="CorreoCabe" name="CorreoCabe" placeholder="">
+                            <label for="Numero de Telefono2">Telefono </label>
+                            <input type="number" id="Numero de TelefonoCabe" name="Numero de Telefono2" placeholder="">
+                            <label for="Numero de Celular2">Celular </label>
+                            <input type="number" id="Numero de CelularCabe" name="Numero de Celular2" placeholder="">
+                            <fieldset>
+                                <legend>Parentesco con el beneficiario:
+                                </legend>
+                                <label>
+                                    <input type="radio" name="ParentescoCabe" value="Padre/Madre">Padre/Madre
+                                 
+                                </label>
+                                <label>
+                                    <input type="radio" name="ParentescoCabe" value="Hermano(a)">Hermano(a)
+                                </label>
+                                <label>
+                                    <input type="radio" name="ParentescoCabe" value="Pariente"> Pariente
+                                </label>
+                                <label>
+                                    <input type="radio" name="ParentescoCabe" value="Abuelo(a)">Abuelo(a)
+                                </label>
+                                <label>
+                                    <input type="radio" name="ParentescoCabe" value="Tio(a)">Tio(a)
+                                </label>
+                                <label for="otro">Otro </label>
+                                <input type="text" id="otro" name="ParentescoCabe" placeholder="">
+                                <br>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿Sabe Leer? </legend>
+                                <label>
+                                    <input type="radio" name="LeerCabe" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="LeerCabe" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿Sabe Escribir? </legend>
+                                <label>
+                                    <input type="radio" name="EscribirCabe" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="EscribirCabe" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Nivel de escolaridad de la cabeza del núcleo familiar:
+                                </legend>
+                                <label>Basica primaria:
+                                    <input type="radio" name="Basica primariaCabe" value="si"> si
+                                    <input type="radio" name="Basica primariaCabe" value="no"> no
+                                </label>
+                                <br>
+                                <label>Basica secundaria:
+                                    <input type="radio" name="Basica secundariaCabe" value="si"> si
+                                    <input type="radio" name="Basica secundariaCabe" value="no"> no
+                                </label>
+                                <br>
+                                <label>Tecnico:
+                                    <input type="radio" name="TecnicoCabe" value="si"> si
+                                    <input type="radio" name="TecnicoCabe" value="no"> no
+                                </label>
+                                <br>
+                                <label>Tecnologico:
+                                    <input type="radio" name="TecnologicoCabe" value="si"> si
+                                    <input type="radio" name="TecnologicoCabe" value="no"> no
+                                </label>
+                                <br>
+                                <label>Universitario:
+                                    <input type="radio" name="UniversitarioCabe" value="si"> si
+                                    <input type="radio" name="UniversitarioCabe" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Condición especial de la cabeza del nucleo familiar:
+                                </legend>
+                                <label>Víctima del conflicto armado:
+                                    <input type="radio" name="conflicto armadoCabe" value="si"> si
+                                    <input type="radio" name="conflicto armadoCabe" value="no"> no
+                                </label>
+                                <br>
+                                <label>Victima de desastres naturales:
+                                    <input type="radio" name="desastres naturalesCabe" value="si"> si
+                                    <input type="radio" name="desastres naturalesCabe" value="no"> no
+                                </label>
+                                <br>
+                                <label>Con discapacidad:
+                                    <input type="radio" name="DiscapacidadCabe" value="si"> si
+                                    <input type="radio" name="DiscapacidadCabe" value="no"> no
+                                </label>
+                                <br>
+                                <label for="otro2">Otra condicion especial, Cual? </label>
+                                <input type="text" id="otroCabe" name="condicion especialCabe" placeholder="">
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿Recibe subsidio de familias en acción? </legend>
+                                <label>
+                                    <input type="radio" name="famliaacCabe" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="famliaacCabe" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Estado laboral:
+                                </legend>
+                                <label>
+                                    <input type="radio" name="empleoCabe" value="Empleado formal"> Empleado formal
+                                    <label>
+                                        <input type="radio" name="empleoCabe" value="Empleado informal">Empleado
+                                        informal
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="empleoCabe" value="Independiente">Independiente
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="empleoCabe" value="Sin laborar">Sin laborar
+                                    </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿La cabeza del núcleo familiar se encuentra actualmente empleado? </legend>
+                                <label>
+                                    <input type="radio" name="famiempleCabe" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="famiempleCabe" value="no"> no
+                                </label>
+                                <br>
+                                <label for="Cargo">Cargo: </label>
+                                <input type="text" id="CargoCabe" name="Cargo" placeholder="">
+                                <label for="Empresa">Empresa: </label>
+                                <input type="text" id="EmpresaCabe" name="empresa" placeholder="">
+                                <label for="Saldo">Saldo: </label>
+                                <input type="text" id="SaldoCabe" name="Saldo" placeholder="">
+                                <br>
+                                <label for="Entidadsalud">Nombre de la Entidad Promotora de Salud a la que se
+                                    encuentra
+                                    afiliado:
+                                </label>
+                                <input type="text" id="EntidadsaludCabe" name="Entidadsalud" placeholder="">
+                            </fieldset>
+                            <fieldset>
+                                <legend>La cabeza de hogar hace parte de:
+                                </legend>
+                                <label>
+                                    <input type="radio" name="AsociacionesCabe" value="Asociaciones comunitarias">
+                                    Asociaciones
+                                    comunitarias
+                                </label>
+                                <label>
+                                    <input type="radio" name="AsociacionesCabe" value="Juntas de accion comunal"> Juntas
+                                    de accion
+                                    comunal
+                                </label>
+                                <label>
+                                    <input type="radio" name="AsociacionesCabe" value="Ninguno2"> Ninguno
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿El embarazo fue planeado? </legend>
+                                <label>
+                                    <input type="radio" name="embarazoCabe" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="embarazoCabe" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <h3>REFERENCIAS DEL ACUDIENTE</h3>
+                            <label for="nombre y apellidoA">Nombre y Apellido</label>
+                            <input type="text" id="nombre y apellidoAcu" name="nombre y apellidoA" placeholder="">
+                            <br>
+                            <fieldset>
+                                <legend>Documento de Identidad</legend>
+                                <label>
+                                    <input type="radio" name="tipodocuAcu" value="R.C"> R.C
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipodocuAcu" value="T.I"> T.I
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipodocuAcu" value="C.C"> C.C
+                                </label>
+                                <br>
+                                <label for="Numero de documentoA">Nº </label>
+                                <input type="number" id="Numero de documentoAcu" name="Numero de documentoA"
+                                    placeholder="">
+                            </fieldset>
+                            <br>
+                            <label for="LugarA">Lugar </label>
+                            <input type="text" id="LugarAcu" name="LugarA" placeholder="">
+                            <label for="fecha nacimientoA">fecha de nacimiento </label>
+                            <input type="date" id="fecha nacimientoAcu">
+                            <br>
+                            <br>
+                            <label for="DirecciónVA">Dirección de la vivienda</label>
+                            <input type="text" id="DirecciónVAcu" name="DirecciónVA" placeholder="">
+                            <label for="BarrioA">Barrio</label>
+                            <input type="text" id="BarrioAcu" name="BarrioA" placeholder="">
+                            <br>
+                            <br>
+                            <label for="CorreoA">Correo electronico</label>
+                            <input type="email" id="CorreoAcu" name="CorreoA" placeholder="">
+                            <label for="Numero de TelefonoA">Telefono </label>
+                            <input type="number" id="Numero de TelefonoAcu" name="Numero de TelefonoA" placeholder="">
+                            <label for="Numero de CelularA">Celular </label>
+                            <input type="number" id="Numero de CelularAcu" name="Numero de CelularA" placeholder="">
+                            <fieldset>
+                                <legend>Parentesco con el beneficiario:
+                                </legend>
+                                <label>
+                                    <input type="radio" name="ParentescoAcu" value="Padre/MadreA">Padre/Madre
+                                    alcantarillado
+                                </label>
+                                <label>
+                                    <input type="radio" name="ParentescoAcu" value="Hermano(a)A">Hermano(a)
+                                </label>
+                                <label>
+                                    <input type="radio" name="ParentescoAcu" value="ParienteA"> Pariente
+                                </label>
+                                <label>
+                                    <input type="radio" name="ParentescoAcu" value="Abuelo(a)A">Abuelo(a)
+                                </label>
+                                <label>
+                                    <input type="radio" name="ParentescoAcu" value="Tio(a)A">Tio(a)
+                                </label>
+                                <label for="otroA">Otro </label>
+                                <input type="text" id="otroA" name="ParentescoAcu" placeholder="">
+                                <br>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Condición especial del Acudiente:
+                                </legend>
+                                <label>Víctima del conflicto armado:
+                                    <input type="radio" name="conflicto armadoAcu" value="si"> si
+                                    <input type="radio" name="conflicto armadoAcu" value="no"> no
+                                </label>
+                                <br>
+                                <label>Victima de desastres naturales:
+                                    <input type="radio" name="desastres naturalesAcu" value="si"> si
+                                    <input type="radio" name="desastres naturalesAcu" value="no"> no
+                                </label>
+                                <br>
+                                <label>Con discapacidad:
+                                    <input type="radio" name="DiscapacidadAcu" value="si"> si
+                                    <input type="radio" name="DiscapacidadAcu" value="no"> no
+                                </label>
+                                <br>
+                                <label for="otro2">Otra condicion especial, Cual? </label>
+                                <input type="text" id="otroAcu" name="condicion especialAcu" placeholder="">
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿El acudientel aporta al sustento económico del hogar?: </legend>
+                                <label>
+                                    <input type="radio" name="aporteAcu" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="aporteAcu" value="no"> no
+                                </label>
+                                <label for="aporteA">Cuanto? </label>
+                                <input type="text" id="cuantoaporteAcu" name="aporteA" placeholder="">
+                                <br>
+                            </fieldset>
+                            <h3>NUTRICION Y SALUD DEL BENEFICIARIO</h3>
+                            <label for="nutricion">Diagnóstico nutricional</label>
+                            <input type="text" id="nutricion" name="nutricion" placeholder="">
+                            <fieldset>
+                                <legend>¿El beneficiario se ha desparasitado? : </legend>
+                                <label>
+                                    <input type="radio" name="nutri" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="nutri" value="no"> no
+                                </label>
+                                <label for="nutricionF">Ultima fecha</label>
+                                <input type="date" id="nutricionF" name="nutricionF" placeholder="">
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿El beneficiario se encuentra afiliado al sistema general de seguridad
+                                    social? :
+                                </legend>
+                                <label>
+                                    <input type="radio" name="segusoc" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="segusoc" value="no"> no
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Es beneficiario de regimen: </legend>
+                                <label>
+                                    <input type="radio" name="regimen" value="contributivo"> contributivo
+                                </label>
+                                <label>
+                                    <input type="radio" name="regimen" value="subsidiado"> subsidiado
+                                </label>
+                                <label>
+                                    <input type="radio" name="regimen" value="especial"> especial
+                                </label>
+                            </fieldset>
+
+                            <br>
+                            <label for="entisa">Nombre de la entidad promotora de salud:</label>
+                            <input type="text" id="entisa" name="entisa" placeholder="">
+
+                            <fieldset>
+                                <legend>El beneficiario ha asistido los siguientes controles en un tiempo menor a 6
+                                    meses:
+                                </legend>
+                                <label>Salud oral:
+                                    <input type="radio" name="Salud oralBene" value="si"> si
+                                    <input type="radio" name="Salud oralBene" value="no"> no
+                                </label>
+                                <br>
+                                <label>Oftalmologicos:
+                                    <input type="radio" name="OftalmologicosBene" value="si"> si
+                                    <input type="radio" name="OftalmologicosBene" value="no"> no
+                                </label>
+                                <br>
+                                <label>Audicion:
+                                    <input type="radio" name="AudicionBene" value="si"> si
+                                    <input type="radio" name="AudicionBene" value="no"> no
+                                </label>
+                                <br>
+                                <label>Medico general:
+                                    <input type="radio" name="Medico generalBene" value="si"> si
+                                    <input type="radio" name="Medico generalBene" value="no"> no
+                                </label>
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>En los ultimos 3 meses el beneficiario ha presentado problemas de salud:
+                                </legend>
+                                <label>
+                                    <input type="radio" name="prosalud" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="prosalud" value="no"> no
+                                </label>
+                                <label for="prosaludcua">Cuales?</label>
+                                <input type="text" id="prosaludcua" name="prosaludcua" placeholder="">
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿El beneficiario presenta discapacidad? </legend>
+                                <label>
+                                    <input type="radio" name="disca" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="disca" value="no"> no
+                                </label>
+                                <label for="discacua">Cual?</label>
+                                <input type="text" id="discacua" name="discacua" placeholder="">
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿Se le ha aplicado el registro para localizacion y caracterizacion de las
+                                    personas con
+                                    discapacidad? </legend>
+                                <label>
+                                    <input type="radio" name="discaregis" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="discaregis" value="no"> no
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>¿Le han diagnosticado al beneficiario discapacidad?: </legend>
+                                <label for="Psicosocial">Psicosocial</label>
+                                <label>
+                                    <input type="radio" name="Psicosocial" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="Psicosocial" value="no"> no
+                                </label>
+                                <label for="severidad">¿Grado de severidad?</label>
+                                <label>
+                                    <input type="radio" name="severidadpisco" value="Leve o independiente"> Leve o
+                                    independiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadpisco" value="Moderado o Semidepéndiente">
+                                    Moderado o
+                                    Semidepéndiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadpisco" value="Severo o dependiente"> Severo o
+                                    dependiente
+                                </label>
+                                <br>
+                                <br>
+                                <label for="Cognitiva">Cognitiva</label>
+                                <label>
+                                    <input type="radio" name="Cognitiva" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="Cognitiva" value="no"> no
+                                </label>
+                                <label for="severidadCog">¿Grado de severidad?</label>
+                                <label>
+                                    <input type="radio" name="severidadCog" value="Leve o independiente"> Leve o
+                                    independiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadCog" value="Moderado o Semidepéndiente">
+                                    Moderado o
+                                    Semidepéndiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadCog" value="Severo o dependiente"> Severo o
+                                    dependiente
+                                </label>
+                                <br>
+                                <br>
+                                <label for="Sensorial visual">Sensorial visual</label>
+                                <label>
+                                    <input type="radio" name="Sensorial visual" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="Sensorial visual" value="no"> no
+                                </label>
+                                <label for="severidadSen">¿Grado de severidad?</label>
+                                <label>
+                                    <input type="radio" name="severidadSen" value="Leve o independiente"> Leve o
+                                    independiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadSen" value="Moderado o Semidepéndiente">
+                                    Moderado o
+                                    Semidepéndiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadSen" value="Severo o dependiente"> Severo o
+                                    dependiente
+                                </label>
+                                <br>
+                                <br>
+                                <label for="Sensorial auditiva">Sensorial auditiva</label>
+                                <label>
+                                    <input type="radio" name="Sensorial auditiva" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="Sensorial auditiva" value="no"> no
+                                </label>
+                                <label for="severidadaudi">¿Grado de severidad?</label>
+                                <label>
+                                    <input type="radio" name="severidadaudi" value="Leve o independiente"> Leve o
+                                    independiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadaudi" value="Moderado o Semidepéndiente">
+                                    Moderado o
+                                    Semidepéndiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadaudi" value="Severo o dependiente"> Severo o
+                                    dependiente
+                                </label>
+                                <br>
+                                <br>
+                                <label for="Sensorial gusto, olfato y tacto">Sensorial gusto, olfato y tacto</label>
+                                <label>
+                                    <input type="radio" name="Sensorial gusto, olfato y tacto" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="Sensorial gusto, olfato y tacto" value="no"> no
+                                </label>
+                                <label for="severidadtacto">¿Grado de severidad?</label>
+                                <label>
+                                    <input type="radio" name="severidadtacto" value="Leve o independiente"> Leve o
+                                    independiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadtacto" value=" Moderado o Semidepéndiente">
+                                    Moderado o
+                                    Semidepéndiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadtacto" value="Severo o dependiente"> Severo o
+                                    dependiente
+                                </label>
+                                <br>
+                                <br>
+                                <label for="Movilidad">Movilidad</label>
+                                <label>
+                                    <input type="radio" name="Movilidad" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="Movilidad" value="no"> no
+                                </label>
+                                <label for="severidadMovi">¿Grado de severidad?</label>
+                                <label>
+                                    <input type="radio" name="severidadMovi" value="Leve o independiente"> Leve o
+                                    independiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadMovi" value=" Moderado o Semidepéndiente">
+                                    Moderado o
+                                    Semidepéndiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadMovi" value="Severo o dependiente"> Severo o
+                                    dependiente
+                                </label>
+                                <br>
+                                <br>
+                                <label for="Requiere ayuda">Requiere ayuda de otra persona</label>
+                                <label>
+                                    <input type="radio" name="Requiere ayuda" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="Requiere ayuda" value="no"> no
+                                </label>
+                                <label for="severidadayuda">¿Grado de severidad?</label>
+                                <label>
+                                    <input type="radio" name="severidadayuda" value="Leve o independiente"> Leve o
+                                    independiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadayuda" value="Moderado o Semidepéndiente">
+                                    Moderado o
+                                    Semidepéndiente
+                                </label>
+                                <label>
+                                    <input type="radio" name="severidadayuda" value="Severo o dependiente"> Severo o
+                                    dependiente
+                                </label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>¿Requiere terapia de rehabilitacion? </legend>
+                                <label>
+                                    <input type="radio" name="rehabi" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="rehabi" value="no"> no
+                                </label>
+                                <label for="frecue">Con que frecuencia recibe la atencion de rehabilitacion?</label>
+                                <input type="text" id="frecue" name="frecue" placeholder="">
+                                <br>
+                            </fieldset>
+                            <h3>IDENTIFICACION DE FACTORES DE RIESGO DE LOS BENEFICIARIOS</h3>
+                            <fieldset>
+                                <legend>Condición especial Beneficiario:
+                                </legend>
+                                <label>Víctima del conflicto armado:
+                                    <input type="radio" name="conflicto armadoBene" value="si"> si
+                                    <input type="radio" name="conflicto armadoBene" value="no"> no
+                                </label>
+                                <br>
+                                <label>Victima de desastres naturales:
+                                    <input type="radio" name="desastres naturalesBene" value="si"> si
+                                    <input type="radio" name="desastres naturalesBene" value="no"> no
+                                </label>
+                                <br>
+                                <label for="otro2">Otra condicion especial, Cual? </label>
+                                <input type="text" id="otro2" name="condicion especialBene" placeholder="">
+                                <br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    <h4>Verifique las condiciones fisicas del beneficiario:</h4>
+                                </legend>
+                                <label for="comipadre">Pide comida a sus padres</label>
+                                <label>
+                                    <input type="radio" name="comipadre" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="comipadre" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="presenp">Presenta mala presentacion personal</label>
+                                <label>
+                                    <input type="radio" name="presenp" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="presenp" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="presenO">Presenta olores desagradables</label>
+                                <label>
+                                    <input type="radio" name="presenO" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="presenO" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="presenEn">Presenta gran frecuencia de enfermedades</label>
+                                <label>
+                                    <input type="radio" name="presenEn" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="presenEn" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="presenRa">Presenta brotes o rasquiñas frecuentes</label>
+                                <label>
+                                    <input type="radio" name="presenRa" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="presenRa" value="no"> no
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    <h4>Verifique las condiciones emocionales del beneficiario:</h4>
+                                </legend>
+                                <label for="teme">Se muestra temeroso frecuentemente</label>
+                                <label>
+                                    <input type="radio" name="teme" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="teme" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="interes">Se interesa por lo que sienten los demas</label>
+                                <label>
+                                    <input type="radio" name="interes" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="interes" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="aisla">Se aisla en los espacios de juegos</label>
+                                <label>
+                                    <input type="radio" name="aisla" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="aisla" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="acti">Se escapa de las actividades</label>
+                                <label>
+                                    <input type="radio" name="acti" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="acti" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="agres">Es agresivo con los demas</label>
+                                <label>
+                                    <input type="radio" name="agres" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="agres" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="destr">Destruye los objetos de su entorno</label>
+                                <label>
+                                    <input type="radio" name="destr" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="destr" value="no"> no
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>
+                                    <h4>Indique algunas fortalezas:</h4>
+                                </legend>
+                                <label for="amis">Se muestra amistoso(a)con los demas</label>
+                                <label>
+                                    <input type="radio" name="amis" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="amis" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="comp">Comparte de manera asertiva</label>
+                                <label>
+                                    <input type="radio" name="comp" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="comp" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="fluid">Opina y muestra fluidez verbal</label>
+                                <label>
+                                    <input type="radio" name="fluid" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="fluid" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="cuid">Cuida el medio en el que vive</label>
+                                <label>
+                                    <input type="radio" name="cuid" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="cuid" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="jueg">Juega tranquilamente </label>
+                                <label>
+                                    <input type="radio" name="jueg" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="jueg" value="no"> no
+                                </label>
+                                <br>
+                                <br>
+                                <label for="tarea">Realiza sus tareas y trabajos </label>
+                                <label>
+                                    <input type="radio" name="tarea" value="si"> si
+                                </label>
+                                <label>
+                                    <input type="radio" name="tarea" value="no"> no
+                                </label>
+                            </fieldset>
+                            <br>
+                            <label for="Observaciones"> Observaciones</label>
+                            <br>
+                            <textarea cols="50" rows="10" id="Observaciones" placeholder="ingrese comentario"
+                                name="Observaciones"> </textarea>
+                            <br>
+                            <button class="btn btn-primary" id="btn-task-form">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Tasks List -->
+            <div class="col-md-20" id="tasks-container"></div>
+        </div>
+    </div>
+
+    <!-- CUSTOM CODE -->
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
